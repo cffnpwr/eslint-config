@@ -1,6 +1,7 @@
 # @cffnpwr/eslint-config
 
-[![GitHub License](https://img.shields.io/github/license/cffnpwr/eslint-config?style=flat)](/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/cffnpwr/eslint-config?style=flat)](./LICENSE)
+[![npm Version](https://img.shields.io/npm/v/%40cffnpwr%2Feslint-config?style=flat)](https://www.npmjs.com/package/@cffnpwr/eslint-config)
 [![JSR Version](https://jsr.io/badges/@cffnpwr/eslint-config)](https://jsr.io/@cffnpwr/eslint-config)
 
 A shared ESLint configuration for cffnpwr.
