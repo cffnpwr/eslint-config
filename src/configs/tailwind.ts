@@ -39,14 +39,14 @@ export function tailwind(): Linter.Config[] {
         //#endregion eslint-plugin-tailwindcss
 
         //#region eslint-plugin-better-tailwindcss (formatting)
-        "better-tailwindcss/multiline": [
+        "better-tailwindcss/enforce-consistent-line-wrapping": [
           "warn",
           {
             printWidth: 80,
             indent: 2,
           },
         ],
-        "better-tailwindcss/sort-classes": "warn",
+        "better-tailwindcss/enforce-consistent-class-order": "warn",
         "better-tailwindcss/no-unnecessary-whitespace": "warn",
         //#endregion eslint-plugin-better-tailwindcss
       },
