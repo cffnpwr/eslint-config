@@ -34,7 +34,7 @@ jobs:
         run: bun run build
 
       - name: Publish to npm
-        run: bunx pnpm publish --provenance --access public
+        run: bunx pnpm publish --provenance --access public --no-git-checks
 
   publish-jsr:
     name: Publish to JSR
