@@ -34,7 +34,9 @@
 
               # Only exec into user shell for interactive sessions
               # Skip for non-interactive commands (like VSCode env detection)
-              if [ -t 0 ] && [ -z "$IN_NIX_SHELL" ]; then
+              if [ -t 0 ] && [ -z "$__NIX_SHELL_EXEC" ]; then
+                export __NIX_SHELL_EXEC=1
+
                 # Detect user's login shell (works on both macOS and Linux)
                 if command -v dscl >/dev/null 2>&1; then
                   # macOS
