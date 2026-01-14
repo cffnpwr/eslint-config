@@ -3,5 +3,6 @@
     "arrterian.nix-env-selector",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
+    "github.vscode-github-actions",
   ]
 }

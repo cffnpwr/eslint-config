@@ -28,7 +28,7 @@
     "clean": "rm -rf dist node_modules",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepublishOnly": "bun run build"
+    "publish:jsr": "jsr publish"
   },
   "dependencies": {
     "@eslint/js": "^9.39.2",
@@ -49,6 +49,7 @@
     "@types/node": "^24.10.8",
     "eslint": "^9.39.2",
     "eslint-config-flat-gitignore": "^2.1.0",
+    "jsr": "^0.13.5",
     "tsdown": "^0.19.0",
     "typescript": "^5.9.3"
   },

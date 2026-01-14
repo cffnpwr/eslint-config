@@ -12,10 +12,22 @@ cffnpwrのためのESLint共通設定です。
 ### npm
 
 ```sh
+npm install -D @cffnpwr/eslint-config
+```
+
+or
+
+```sh
 npx jsr add -D @cffnpwr/eslint-config
 ```
 
 ### yarn
+
+```sh
+yarn add -D @cffnpwr/eslint-config
+```
+
+or
 
 ```sh
 yarn dlx jsr add -D @cffnpwr/eslint-config
@@ -24,16 +36,34 @@ yarn dlx jsr add -D @cffnpwr/eslint-config
 ### pnpm
 
 ```sh
+pnpm add -D @cffnpwr/eslint-config
+```
+
+or
+
+```sh
 pnpm dlx jsr add -D @cffnpwr/eslint-config
 ```
 
 ### Bun
 
 ```sh
+bun add -D @cffnpwr/eslint-config
+```
+
+or
+
+```sh
 bunx jsr add -D @cffnpwr/eslint-config
 ```
 
 ### Deno
+
+```sh
+deno add -D npm:@cffnpwr/eslint-config
+```
+
+or
 
 ```sh
 deno add -D jsr:@cffnpwr/eslint-config
