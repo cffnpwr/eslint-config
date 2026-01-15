@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/cffnpwr/eslint-config/compare/v1.1.1...v1.1.2) (2026-01-15)
+
+
+### Bug Fixes
+
+* :bug: type_annotation_spacingがarrow_spacingと競合していたので修正 ([#11](https://github.com/cffnpwr/eslint-config/issues/11)) ([1a65064](https://github.com/cffnpwr/eslint-config/commit/1a65064237c72ac34d51eac545cd44948189f8f3))
+
 ## [1.1.1](https://github.com/cffnpwr/eslint-config/compare/v1.1.0...v1.1.1) (2026-01-14)
 
 
