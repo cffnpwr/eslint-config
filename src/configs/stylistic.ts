@@ -311,13 +311,13 @@ export function stylistic(): Linter.Config[] {
         ],
         "@stylistic/template-curly-spacing": ["warn", "never"],
         "@stylistic/template-tag-spacing": ["error", "never"],
-        "@stylistic/type-annotation-spacing": [
-          "warn",
-          {
-            before: false,
-            after: true,
+        "@stylistic/type-annotation-spacing": [`warn`, {
+          before: true,
+          after: true,
+          overrides: {
+            colon: { before: false, after: true },
           },
-        ],
+        }],
         "@stylistic/type-generic-spacing": "off", // @stylistic/keyword-spacing と衝突する
         "@stylistic/type-named-tuple-spacing": "warn",
         "@stylistic/wrap-iife": [
