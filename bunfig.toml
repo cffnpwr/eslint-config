@@ -1,3 +1,3 @@
 [install]
-# Only install package versions published at least 7 days ago
-minimumReleaseAge = 604800 # 7 days in seconds
+# Only install package versions published at least 3 days ago
+minimumReleaseAge = 259200 # 3 days in seconds
