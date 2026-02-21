@@ -22,16 +22,14 @@
           # Development shell
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
+              bun
               git
-              mise
               nil
               nixd
               nixfmt
             ];
 
             shellHook = ''
-              mise install
-
               # Only exec into user shell for interactive sessions
               # Skip for non-interactive commands (like VSCode env detection)
               if [ -t 0 ] && [ -z "$__NIX_SHELL_EXEC" ]; then
