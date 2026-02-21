@@ -311,7 +311,7 @@ export function stylistic(): Linter.Config[] {
         ],
         "@stylistic/template-curly-spacing": ["warn", "never"],
         "@stylistic/template-tag-spacing": ["error", "never"],
-        "@stylistic/type-annotation-spacing": [`warn`, {
+        "@stylistic/type-annotation-spacing": ["warn", {
           before: true,
           after: true,
           overrides: {
