@@ -6,13 +6,17 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - ".github/workflows/*"
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow_ref }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions: {}
 
 jobs:
   lint:
-    uses: cffnpwr/actions/.github/workflows/github-actions-lint.yaml@7664d279a8733dfc9ad9f0b3a3b17109312f5f2c
+    uses: cffnpwr/actions/.github/workflows/github-actions-lint.yaml@571c1d809a48986ed10de38abcf5def8b1eba93d
+    permissions:
+      contents: read
