@@ -12,11 +12,13 @@ on:
       - "**/flake.lock"
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow_ref }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions: {}
 
 jobs:
   flake-check:
-    uses: cffnpwr/actions/.github/workflows/flake-check.yaml@7664d279a8733dfc9ad9f0b3a3b17109312f5f2c
+    uses: cffnpwr/actions/.github/workflows/flake-check.yaml@571c1d809a48986ed10de38abcf5def8b1eba93d
+    permissions:
+      contents: read

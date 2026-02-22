@@ -10,11 +10,15 @@ on:
       - edited
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.number }}
+  group: ${{ github.workflow_ref }}-${{ github.event.number }}
   cancel-in-progress: true
 
 permissions: {}
 
 jobs:
   status-check:
-    uses: cffnpwr/actions/.github/workflows/status-check.yaml@7664d279a8733dfc9ad9f0b3a3b17109312f5f2c
+    uses: cffnpwr/actions/.github/workflows/status-check.yaml@571c1d809a48986ed10de38abcf5def8b1eba93d
+    permissions:
+      pull-requests: read
+      checks: read
+      statuses: read
