@@ -63,7 +63,7 @@
     }
   },
   "overrides": {
-    "minimatch": "10.2.3",
+    "minimatch": "10.2.4",
     "ajv": "6.14.0"
   },
   "publishConfig": {
