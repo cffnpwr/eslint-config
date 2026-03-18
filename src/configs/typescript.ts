@@ -44,6 +44,7 @@ export function typescript(): Linter.Config[] {
             null: "ignore",
           },
         ],
+        "func-style": ["error", "expression"],
         "no-new-wrappers": "error",
         "no-restricted-imports": "off",
         "no-self-compare": "error",
@@ -90,6 +91,18 @@ export function typescript(): Linter.Config[] {
 
         //#region import
         "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            checkTypeImports: true,
+            pattern: {
+              js: "always",
+              ts: "always",
+              tsx: "always",
+            },
+          },
+        ],
         "import/no-duplicates": [
           "warn",
           {
