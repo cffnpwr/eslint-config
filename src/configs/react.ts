@@ -7,7 +7,7 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 import { defineConfig } from "../utils/define-config.js";
 import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
 
-export function react(): Linter.Config[] {
+export const react = (): Linter.Config[] => {
   return defineConfig([
     {
       name: "cffnpwr/react/setup",
@@ -48,4 +48,4 @@ export function react(): Linter.Config[] {
       },
     },
   ]);
-}
+};

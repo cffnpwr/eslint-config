@@ -23,8 +23,8 @@
   "scripts": {
     "build": "tsdown",
     "clean": "rm -rf dist node_modules",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "publish:jsr": "jsr publish"
   },
   "dependencies": {

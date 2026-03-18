@@ -5,7 +5,7 @@ import tailwindPlugin from "eslint-plugin-tailwindcss";
 
 import { defineConfig } from "../utils/define-config.js";
 
-export function tailwind(): Linter.Config[] {
+export const tailwind = (): Linter.Config[] => {
   return defineConfig([
     {
       name: "cffnpwr/tailwind/setup",
@@ -52,4 +52,4 @@ export function tailwind(): Linter.Config[] {
       },
     },
   ]);
-}
+};

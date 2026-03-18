@@ -10,7 +10,7 @@ import { defineConfig } from "../utils/define-config.js";
 import { detectRuntime } from "../utils/detect-runtime.js";
 import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
 
-export function typescript(): Linter.Config[] {
+export const typescript = (): Linter.Config[] => {
   return defineConfig([
     {
       name: "cffnpwr/typescript/setup",
@@ -153,4 +153,4 @@ export function typescript(): Linter.Config[] {
       },
     },
   ]);
-}
+};
