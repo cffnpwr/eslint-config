@@ -40,9 +40,9 @@ export type CffnpwrConfigOptions = {
  * export default cffnpwrConfig({ react: true, tailwind: true });
  * ```
  */
-export default function cffnpwrConfig(
+const cffnpwrConfig = (
   options: CffnpwrConfigOptions = {},
-): Linter.Config[] {
+): Linter.Config[] => {
   const { react: enableReact = false, tailwind: enableTailwind = false } = options;
 
   const configs: Linter.Config[] = [
@@ -59,6 +59,7 @@ export default function cffnpwrConfig(
   }
 
   return configs;
-}
+};
 
+export default cffnpwrConfig;
 export { react, stylistic, tailwind, typescript };

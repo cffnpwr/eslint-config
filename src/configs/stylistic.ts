@@ -4,7 +4,7 @@ import stylisticPlugin from "@stylistic/eslint-plugin";
 
 import { defineConfig } from "../utils/define-config.js";
 
-export function stylistic(): Linter.Config[] {
+export const stylistic = (): Linter.Config[] => {
   return defineConfig([
     {
       name: "cffnpwr/stylistic/setup",
@@ -338,4 +338,4 @@ export function stylistic(): Linter.Config[] {
       },
     },
   ]);
-}
+};

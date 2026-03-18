@@ -4,6 +4,6 @@ type TypedLinterConfig = Linter.Config & {
   name: string;
 };
 
-export function defineConfig(configs: TypedLinterConfig[]): Linter.Config[] {
+export const defineConfig = (configs: TypedLinterConfig[]): Linter.Config[] => {
   return configs;
-}
+};

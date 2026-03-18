@@ -1,4 +1,4 @@
-export function detectRuntime(): "bun" | "deno" | "node" {
+export const detectRuntime = (): "bun" | "deno" | "node" => {
   if (process.versions.bun) {
     return "bun";
   }
@@ -9,4 +9,4 @@ export function detectRuntime(): "bun" | "deno" | "node" {
   }
 
   return "node";
-}
+};
