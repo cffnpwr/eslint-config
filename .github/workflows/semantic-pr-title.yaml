@@ -13,7 +13,8 @@ concurrency:
   group: ${{ github.workflow_ref }}-${{ github.event.number }}
   cancel-in-progress: true
 
-permissions: {}
+permissions:
+  pull-requests: read
 
 jobs:
   semantic-pr-title:
