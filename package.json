@@ -47,7 +47,7 @@
     "eslint-config-flat-gitignore": "2.3.0",
     "jsr": "0.14.3",
     "pnpm": "10.33.0",
-    "tsdown": "0.21.5",
+    "tsdown": "0.21.6",
     "typescript": "5.9.3"
   },
   "peerDependencies": {
