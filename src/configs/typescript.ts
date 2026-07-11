@@ -1,7 +1,7 @@
 import type { Linter } from "eslint";
 
 import eslintJs from "@eslint/js";
-import importPlugin from "eslint-plugin-import";
+import importXPlugin from "eslint-plugin-import-x";
 import perfectionistPlugin from "eslint-plugin-perfectionist";
 import unusedImportsPlugin from "eslint-plugin-unused-imports";
 import tsEslint from "typescript-eslint";
@@ -16,7 +16,7 @@ export const typescript = (): Linter.Config[] => {
       name: "cffnpwr/typescript/setup",
       plugins: {
         "@typescript-eslint": tsEslint.plugin,
-        import: importPlugin,
+        "import-x": importXPlugin,
         perfectionist: perfectionistPlugin,
         "unused-imports": unusedImportsPlugin,
       },
@@ -90,8 +90,8 @@ export const typescript = (): Linter.Config[] => {
         //#endregion TypeScript
 
         //#region import
-        "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
-        "import/extensions": [
+        "import-x/consistent-type-specifier-style": ["error", "prefer-top-level"],
+        "import-x/extensions": [
           "error",
           "ignorePackages",
           {
@@ -103,7 +103,7 @@ export const typescript = (): Linter.Config[] => {
             },
           },
         ],
-        "import/no-duplicates": [
+        "import-x/no-duplicates": [
           "warn",
           {
             "prefer-inline": false,
