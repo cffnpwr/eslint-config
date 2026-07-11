@@ -1,9 +1,5 @@
 [global]
-excludes = [".git/**", ".serena/**", "result/**"]
-
-[formatter.nix]
-command = "nixfmt"
-includes = ["*.nix", "flake.nix"]
+excludes = [".git/**", ".serena/**" , "**/node_modules/**"]
 
 [formatter.yaml]
 command = "yamlfmt"
