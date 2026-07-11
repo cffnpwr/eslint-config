@@ -1,18 +1,20 @@
 import type { ESLint, Linter } from "eslint";
 
+import eslintReact from "@eslint-react/eslint-plugin";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
-import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 import { defineConfig } from "../utils/define-config.js";
 import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
+
+const eslintReactRecommended = eslintReact.configs["recommended-typescript"];
 
 export const react = (): Linter.Config[] => {
   return defineConfig([
     {
       name: "cffnpwr/react/setup",
       plugins: {
-        react: reactPlugin,
+        ...(eslintReactRecommended.plugins as Record<string, ESLint.Plugin>),
         "react-hooks": reactHooksPlugin as ESLint.Plugin,
         "jsx-a11y": jsxA11yPlugin,
       },
@@ -25,26 +27,15 @@ export const react = (): Linter.Config[] => {
           },
         },
       },
-      settings: {
-        react: {
-          version: "detect",
-        },
-      },
     },
     {
       name: "cffnpwr/react/rules",
       rules: {
         ...excludeLegacyRules({
-          ...reactPlugin.configs.flat.recommended?.rules,
-          ...reactPlugin.configs.flat["jsx-runtime"]?.rules,
+          ...eslintReactRecommended.rules,
           ...reactHooksPlugin.configs["recommended-latest"].rules,
           ...jsxA11yPlugin.flatConfigs.recommended.rules,
         }),
-
-        //#region React
-        "react/prop-types": "off",
-        "react/display-name": "off",
-        //#endregion React
       },
     },
   ]);
