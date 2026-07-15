@@ -3,7 +3,7 @@ declare module "eslint-plugin-tailwindcss" {
 
   const plugin: ESLint.Plugin & {
     configs: {
-      "flat/recommended": Linter.Config[];
+      recommended: Linter.Config;
     };
   };
 
