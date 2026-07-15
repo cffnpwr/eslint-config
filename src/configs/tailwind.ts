@@ -26,7 +26,7 @@ export const tailwind = (): Linter.Config[] => {
     {
       name: "cffnpwr/tailwind/rules",
       rules: {
-        ...tailwindPlugin.configs["flat/recommended"][1]?.rules,
+        ...tailwindPlugin.configs.recommended.rules,
 
         //#region eslint-plugin-tailwindcss (linting)
         "tailwindcss/classnames-order": "off", // better-tailwindcss で対応
