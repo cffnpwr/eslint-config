@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1](https://github.com/cffnpwr/eslint-config/compare/v2.0.0...v2.0.1) (2026-07-15)
+
+
+### Bug Fixes
+
+* :bug: sort-imports のenvironmentをbun固定にしランタイム依存のimport順矛盾を解消 ([#182](https://github.com/cffnpwr/eslint-config/issues/182)) ([f5772b4](https://github.com/cffnpwr/eslint-config/commit/f5772b49ea9b46c7463b828485293174a20af62d))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.13.2 ([#173](https://github.com/cffnpwr/eslint-config/issues/173)) ([d42f02a](https://github.com/cffnpwr/eslint-config/commit/d42f02a0de216eec06db169e2552b0227f0f2905))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.14.5 ([#179](https://github.com/cffnpwr/eslint-config/issues/179)) ([00f8c21](https://github.com/cffnpwr/eslint-config/commit/00f8c212ee2411cb913935c946b9a482023d5d20))
+* **deps:** :package: update dependency eslint-plugin-tailwindcss to v4.1.0 ([#180](https://github.com/cffnpwr/eslint-config/issues/180)) ([dfb1fec](https://github.com/cffnpwr/eslint-config/commit/dfb1fec0a0f0a8fbcb57eb058ed84452975f7537))
+
 ## [2.0.0](https://github.com/cffnpwr/eslint-config/compare/v1.2.0...v2.0.0) (2026-07-11)
 
 
