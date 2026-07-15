@@ -7,7 +7,6 @@ import unusedImportsPlugin from "eslint-plugin-unused-imports";
 import tsEslint from "typescript-eslint";
 
 import { defineConfig } from "../utils/define-config.js";
-import { detectRuntime } from "../utils/detect-runtime.js";
 import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
 
 export const typescript = (): Linter.Config[] => {
@@ -131,7 +130,7 @@ export const typescript = (): Linter.Config[] => {
               "index",
               "unknown",
             ],
-            environment: detectRuntime(),
+            environment: "bun",
           },
         ],
         "perfectionist/sort-named-exports": "warn",
