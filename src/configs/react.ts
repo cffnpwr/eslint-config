@@ -4,8 +4,8 @@ import eslintReact from "@eslint-react/eslint-plugin";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
-import { defineConfig } from "../utils/define-config.js";
-import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
+import { defineConfig } from "../utils/define-config.ts";
+import { excludeLegacyRules } from "../utils/exclude-legacy-rules.ts";
 
 const eslintReactRecommended = eslintReact.configs["recommended-typescript"];
 

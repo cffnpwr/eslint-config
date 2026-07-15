@@ -3,7 +3,7 @@ import type { Linter } from "eslint";
 import betterTailwindPlugin from "eslint-plugin-better-tailwindcss";
 import tailwindPlugin from "eslint-plugin-tailwindcss";
 
-import { defineConfig } from "../utils/define-config.js";
+import { defineConfig } from "../utils/define-config.ts";
 
 export const tailwind = (): Linter.Config[] => {
   return defineConfig([
