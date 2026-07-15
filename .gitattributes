@@ -1,0 +1,4 @@
+# テスト fixture は行末・改行コードをバイト単位で保全する。
+# linebreak-style / no-trailing-spaces の検知テストが CRLF・行末スペースに依存するため、
+# チェックアウト時の EOL 正規化を無効化する。
+test/fixtures/** -text

@@ -9,6 +9,9 @@ const files = ["**/*.{js,ts}"];
 export default defineConfig([
   gitignore(),
   {
+    ignores: ["test/fixtures/**"],
+  },
+  {
     files,
     languageOptions: {
       globals: {

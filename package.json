@@ -25,6 +25,7 @@
     "clean": "rm -rf dist node_modules",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "test": "bun test",
     "publish:jsr": "jsr publish"
   },
   "dependencies": {
