@@ -6,8 +6,8 @@ import perfectionistPlugin from "eslint-plugin-perfectionist";
 import unusedImportsPlugin from "eslint-plugin-unused-imports";
 import tsEslint from "typescript-eslint";
 
-import { defineConfig } from "../utils/define-config.js";
-import { excludeLegacyRules } from "../utils/exclude-legacy-rules.js";
+import { defineConfig } from "../utils/define-config.ts";
+import { excludeLegacyRules } from "../utils/exclude-legacy-rules.ts";
 
 export const typescript = (): Linter.Config[] => {
   return defineConfig([

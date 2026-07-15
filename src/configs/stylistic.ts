@@ -2,7 +2,7 @@ import type { Linter } from "eslint";
 
 import stylisticPlugin from "@stylistic/eslint-plugin";
 
-import { defineConfig } from "../utils/define-config.js";
+import { defineConfig } from "../utils/define-config.ts";
 
 export const stylistic = (): Linter.Config[] => {
   return defineConfig([

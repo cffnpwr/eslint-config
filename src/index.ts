@@ -1,9 +1,9 @@
 import type { Linter } from "eslint";
 
-import { react } from "./configs/react.js";
-import { stylistic } from "./configs/stylistic.js";
-import { tailwind } from "./configs/tailwind.js";
-import { typescript } from "./configs/typescript.js";
+import { react } from "./configs/react.ts";
+import { stylistic } from "./configs/stylistic.ts";
+import { tailwind } from "./configs/tailwind.ts";
+import { typescript } from "./configs/typescript.ts";
 
 export type CffnpwrConfigOptions = {
   /**
