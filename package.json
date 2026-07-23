@@ -39,7 +39,7 @@
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-tailwindcss": "4.2.0",
     "eslint-plugin-unused-imports": "4.4.1",
-    "typescript-eslint": "8.64.0"
+    "typescript-eslint": "8.65.0"
   },
   "devDependencies": {
     "@cffnpwr/tsconfig": "1.0.0",
