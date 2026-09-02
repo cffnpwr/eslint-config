@@ -83,6 +83,13 @@ function curlyNL() {
 
 (function() { return 2; }());
 
+const nestedTernary = foo ? 1 : baz ? 2 : 3;
+
+function returnNoBlank() {
+  const rnb = 1;
+  return rnb;
+}
+
 if(foo){ console.log("kw"); }
 
 if (foo)

@@ -277,6 +277,7 @@ export const stylistic = (): Linter.Config[] => {
           { blankLine: "any", prev: "directive", next: "directive" },
           { blankLine: "any", prev: "import", next: "import" },
           { blankLine: "any", prev: "cjs-import", next: "cjs-import" },
+          { blankLine: "always", prev: "*", next: "return" },
         ],
         "@stylistic/quote-props": ["warn", "as-needed"],
         "@stylistic/quotes": ["warn", "double"], // ダブルクォートに変更

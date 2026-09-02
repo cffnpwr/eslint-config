@@ -14,3 +14,13 @@ export const result = helper();
 export const usedConfig = config;
 export const usedGreet = greet("world");
 export const usedValue = value;
+
+const pick = (flag: boolean): number => {
+  if (flag) {
+    return 1;
+  }
+
+  return value.length > 0 ? 2 : 3;
+};
+
+export const usedPick = pick(true);
