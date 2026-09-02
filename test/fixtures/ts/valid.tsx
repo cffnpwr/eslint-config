@@ -24,3 +24,13 @@ const pick = (flag: boolean): number => {
 };
 
 export const usedPick = pick(true);
+
+// single line comment
+
+/*
+ * starred block
+ * comment
+ */
+
+/** JSDoc one-liner */
+export const documented = 1;

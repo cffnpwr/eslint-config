@@ -2,6 +2,7 @@ import type { Linter } from "eslint";
 
 import stylisticPlugin from "@stylistic/eslint-plugin";
 
+import { noSingleLineBlockComment } from "../rules/no-single-line-block-comment.ts";
 import { defineConfig } from "../utils/define-config.ts";
 
 export const stylistic = (): Linter.Config[] => {
@@ -10,6 +11,11 @@ export const stylistic = (): Linter.Config[] => {
       name: "cffnpwr/stylistic/setup",
       plugins: {
         "@stylistic": stylisticPlugin,
+        cffnpwr: {
+          rules: {
+            "no-single-line-block-comment": noSingleLineBlockComment,
+          },
+        },
       },
       languageOptions: {
         ecmaVersion: "latest",
@@ -204,6 +210,7 @@ export const stylistic = (): Linter.Config[] => {
             multilineDetection: "brackets",
           },
         ],
+        "@stylistic/multiline-comment-style": ["warn", "starred-block"],
         "@stylistic/new-parens": ["error", "always"],
         "@stylistic/no-confusing-arrow": "warn",
         "@stylistic/no-extra-semi": "error",
@@ -336,6 +343,7 @@ export const stylistic = (): Linter.Config[] => {
             after: true,
           },
         ],
+        "cffnpwr/no-single-line-block-comment": "warn",
       },
     },
   ]);
