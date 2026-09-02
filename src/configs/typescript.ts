@@ -36,6 +36,7 @@ export const typescript = (): Linter.Config[] => {
         }),
 
         //#region JavaScript
+        curly: ["error", "all"],
         eqeqeq: [
           "error",
           "always",
@@ -44,6 +45,7 @@ export const typescript = (): Linter.Config[] => {
           },
         ],
         "func-style": ["error", "expression"],
+        "no-nested-ternary": "error",
         "no-new-wrappers": "error",
         "no-restricted-imports": "off",
         "no-self-compare": "error",

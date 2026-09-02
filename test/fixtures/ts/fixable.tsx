@@ -8,3 +8,12 @@ export const usedValue = value
 export const result = helper()
 export const usedGreet = greet('world')
 export const usedConfig = config
+if (config) greet('x')
+const pad = (): number => {
+  const p = 1
+  return p
+}
+export const usedPad = pad()
+/* block */
+// first
+// second
