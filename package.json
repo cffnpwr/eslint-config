@@ -48,7 +48,7 @@
     "eslint": "10.9.1",
     "eslint-config-flat-gitignore": "2.4.0",
     "jsr": "0.14.3",
-    "pnpm": "10.34.5",
+    "pnpm": "12.3.2",
     "tsdown": "0.22.14",
     "typescript": "6.0.3"
   },
