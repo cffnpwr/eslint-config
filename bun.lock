@@ -24,7 +24,7 @@
         "eslint": "10.9.1",
         "eslint-config-flat-gitignore": "2.4.0",
         "jsr": "0.14.3",
-        "pnpm": "10.34.5",
+        "pnpm": "12.3.2",
         "tsdown": "0.22.14",
         "typescript": "6.0.3",
       },
@@ -140,6 +140,22 @@
     "@oxc-project/types": ["@oxc-project/types@0.140.0", "", {}, "sha512-h5LUOzGArYemnW1NMz/DuuQhBi96J6JL2Bk8zE4kvqxB5Sg3jxmCiH4uyOWHDkiKSt5vWlG4FIwCR/DbstcNRQ=="],
 
     "@pkgr/core": ["@pkgr/core@0.3.6", "", {}, "sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA=="],
+
+    "@pnpm/exe.darwin-arm64": ["@pnpm/exe.darwin-arm64@12.3.2", "", { "os": "darwin", "cpu": "arm64" }, "sha512-6/s7P0pq+ULV5FwspTAJcGznMrGCbLOsJdD5d9YpoJONb9jI73MmNTKxlDMtlMikNNK+no8HZDWPFh7Ga1avVA=="],
+
+    "@pnpm/exe.darwin-x64": ["@pnpm/exe.darwin-x64@12.3.2", "", { "os": "darwin", "cpu": "x64" }, "sha512-PQympeXAJXS+ittZ5AHg+eZbcW89ajoCVlM23kFIcrv2eDDiciLJNk4+8AZgmMXMRAbEnjtqVjZbk3lFxHoFEw=="],
+
+    "@pnpm/exe.linux-arm64": ["@pnpm/exe.linux-arm64@12.3.2", "", { "os": "linux", "cpu": "arm64" }, "sha512-SMj5eTAWvjojqCYCXGKQO4qSanTBCe1xhtXQ0qgfBZWJcLCMJkyea65HotYEZLWmAXEDWPh87GZczcJZXEzCIQ=="],
+
+    "@pnpm/exe.linux-arm64-musl": ["@pnpm/exe.linux-arm64-musl@12.3.2", "", { "os": "linux", "cpu": "arm64" }, "sha512-uHgJwDuohgKwlik5zGem0JIhs5c3NNzdh8hB9OW7MmD2s1L2z3/sloMknvCEdx4tne2vS9NN/yb3Enhpj9ZxwQ=="],
+
+    "@pnpm/exe.linux-x64": ["@pnpm/exe.linux-x64@12.3.2", "", { "os": "linux", "cpu": "x64" }, "sha512-qc3jzpaGtMNABOG6Xl0Mee0IOXddAFiDD6sFoOqHpzcq+3YALy+6HMms47g7bYOFNSKWULqPv+SyFYJfZ8EMsA=="],
+
+    "@pnpm/exe.linux-x64-musl": ["@pnpm/exe.linux-x64-musl@12.3.2", "", { "os": "linux", "cpu": "x64" }, "sha512-YYKfJubIb18iBG/pm9peDIP/STy5l5GrOQQkuFr9yOZdkc+hlYH5MBdTD8ffjTkemP9AfTYJ1R/QB/L+AZfRXA=="],
+
+    "@pnpm/exe.win32-arm64": ["@pnpm/exe.win32-arm64@12.3.2", "", { "os": "win32", "cpu": "arm64" }, "sha512-W1+M+HdebF/i3DjF2Tx9/+i7BoIJFX+AwNd3WXjWozylQQVfhBA024Ea0rrx7nwToPkS2M8sd8axpwIFLL5bbw=="],
+
+    "@pnpm/exe.win32-x64": ["@pnpm/exe.win32-x64@12.3.2", "", { "os": "win32", "cpu": "x64" }, "sha512-LjekndG6dhq9g34qTNeEcynAAVypRUoYuga79lG96AA4JCKxH5dC3jx0mLRKeClQKwGVE1yXuQrCj+alVU2qQA=="],
 
     "@quansync/fs": ["@quansync/fs@1.0.0", "", { "dependencies": { "quansync": "^1.0.0" } }, "sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ=="],
 
@@ -699,7 +715,7 @@
 
     "pkg-types": ["pkg-types@2.3.1", "", { "dependencies": { "confbox": "^0.2.4", "exsolve": "^1.0.8", "pathe": "^2.0.3" } }, "sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg=="],
 
-    "pnpm": ["pnpm@10.34.5", "", { "bin": { "pnpm": "bin/pnpm.cjs", "pnpx": "bin/pnpx.cjs" } }, "sha512-pO4F8vc2WCVb1qiYWcBlpFwopX2u+uLIk6Fo7itzFow3uR6D5X6mdlStA/AwMXRkMOi84442LgQmBfuKvIAZLg=="],
+    "pnpm": ["pnpm@12.3.2", "", { "optionalDependencies": { "@pnpm/exe.darwin-arm64": "12.3.2", "@pnpm/exe.darwin-x64": "12.3.2", "@pnpm/exe.linux-arm64": "12.3.2", "@pnpm/exe.linux-arm64-musl": "12.3.2", "@pnpm/exe.linux-x64": "12.3.2", "@pnpm/exe.linux-x64-musl": "12.3.2", "@pnpm/exe.win32-arm64": "12.3.2", "@pnpm/exe.win32-x64": "12.3.2" }, "bin": { "pn": "pn", "pnx": "pnx", "pnpm": "pnpm", "pnpx": "pnpx" } }, "sha512-gvkDUxRkbuqYGt7IXHEaIatfOwVlmz+c6dJwy7k+ig9hTaF5Irrgl5AuK4YO6OttXBp+iSmaFod8DCQ/NrjhWw=="],
 
     "possible-typed-array-names": ["possible-typed-array-names@1.1.0", "", {}, "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg=="],
 
