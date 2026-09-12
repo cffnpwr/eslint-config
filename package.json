@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@cffnpwr/tsconfig": "1.0.0",
-    "@types/bun": "1.4.1",
+    "@types/bun": "1.4.2",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
     "eslint": "10.10.0",
     "eslint-config-flat-gitignore": "2.4.0",
