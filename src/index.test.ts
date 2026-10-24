@@ -8,7 +8,10 @@ const configNames = (configs: Linter.Config[]): string[] => configs
   .map((config) => config.name)
   .filter((name): name is string => name !== undefined);
 
-const hasConfigGroup = (configs: Linter.Config[], prefix: string): boolean => configNames(configs).some((name) => name.startsWith(prefix));
+const hasConfigGroup = (
+  configs: Linter.Config[],
+  prefix: string,
+): boolean => configNames(configs).some((name) => name.startsWith(prefix));
 
 describe("cffnpwrConfig", () => {
   it("[positive] オプション未指定のとき typescript と stylistic を含む", () => {

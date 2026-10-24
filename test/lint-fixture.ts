@@ -5,7 +5,10 @@ import tsEslint from "typescript-eslint";
 
 const fixturesDir = new URL("./fixtures", import.meta.url).pathname;
 
-const createEslint = (configs: Linter.Config[], fix: boolean): ESLint => new ESLint({
+const createEslint = (
+  configs: Linter.Config[],
+  fix: boolean,
+): ESLint => new ESLint({
   cwd: fixturesDir,
   overrideConfigFile: true,
   fix,
