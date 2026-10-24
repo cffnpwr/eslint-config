@@ -30,7 +30,9 @@ export const noSingleLineBlockComment: Rule.RuleModule = {
           }
 
           // 同じ行にコードが続くコメント（foo(/* x */ 1) 等）は // に置き換えると後続のコードを巻き込むため対象外
-          const tokenAfter = sourceCode.getTokenAfter(comment, { includeComments: true });
+          const tokenAfter = sourceCode.getTokenAfter(comment, {
+            includeComments: true,
+          });
           if (tokenAfter?.loc?.start.line === loc.end.line) {
             continue;
           }

@@ -43,7 +43,10 @@ export type CffnpwrConfigOptions = {
 const cffnpwrConfig = (
   options: CffnpwrConfigOptions = {},
 ): Linter.Config[] => {
-  const { react: enableReact = false, tailwind: enableTailwind = false } = options;
+  const {
+    react: enableReact = false,
+    tailwind: enableTailwind = false,
+  } = options;
 
   const configs: Linter.Config[] = [
     ...typescript(),
