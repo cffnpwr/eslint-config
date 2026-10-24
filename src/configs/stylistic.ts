@@ -190,6 +190,17 @@ export const stylistic = (): Linter.Config[] => {
             ],
           },
         ],
+        "@stylistic/max-len": [
+          "warn",
+          {
+            code: 80,
+            tabWidth: 2,
+            ignoreUrls: true,
+            ignoreStrings: true,
+            ignoreTemplateLiterals: true,
+            ignoreRegExpLiterals: true,
+          },
+        ],
         "@stylistic/max-statements-per-line": [
           "warn",
           {
