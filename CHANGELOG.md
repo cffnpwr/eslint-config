@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.1.1](https://github.com/cffnpwr/eslint-config/compare/v2.1.0...v2.1.1) (2026-11-21)
+
+
+### Bug Fixes
+
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.28.6 ([#343](https://github.com/cffnpwr/eslint-config/issues/343)) ([2a58f4f](https://github.com/cffnpwr/eslint-config/commit/2a58f4fa2e68a080a462834f22f17044aa2a9d23))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.28.7 ([#348](https://github.com/cffnpwr/eslint-config/issues/348)) ([602ccec](https://github.com/cffnpwr/eslint-config/commit/602cceceab1e85f9c204768bb05312afdb933178))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.28.8 ([#354](https://github.com/cffnpwr/eslint-config/issues/354)) ([2d882d2](https://github.com/cffnpwr/eslint-config/commit/2d882d2e79bfc7580c966135be6caa4d221eab81))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.30.2 ([#391](https://github.com/cffnpwr/eslint-config/issues/391)) ([5a14cd2](https://github.com/cffnpwr/eslint-config/commit/5a14cd224d86eede9da3bfec11eb4492d3c352d3))
+* **deps:** :package: update dependency @eslint-react/eslint-plugin to v5.30.3 ([#402](https://github.com/cffnpwr/eslint-config/issues/402)) ([a85f391](https://github.com/cffnpwr/eslint-config/commit/a85f391c7fcfd2bff7b80b5258e07aa0c999e128))
+* **deps:** :package: update dependency eslint-plugin-better-tailwindcss to v4.11.0 ([#392](https://github.com/cffnpwr/eslint-config/issues/392)) ([41e7622](https://github.com/cffnpwr/eslint-config/commit/41e76229d5573c7e58d331120987c43ee30ff4c1))
+* **deps:** :package: update dependency eslint-plugin-import-x to v4.18.0 ([#386](https://github.com/cffnpwr/eslint-config/issues/386)) ([da43ec4](https://github.com/cffnpwr/eslint-config/commit/da43ec4a09c8f496606b2b0cb8637309d972812e))
+* **deps:** :package: update dependency eslint-plugin-import-x to v4.18.1 ([#389](https://github.com/cffnpwr/eslint-config/issues/389)) ([e8c1b98](https://github.com/cffnpwr/eslint-config/commit/e8c1b989537d212ca2e71419827b88f94239d73f))
+* **deps:** :package: update dependency eslint-plugin-perfectionist to v5.14.0 ([#403](https://github.com/cffnpwr/eslint-config/issues/403)) ([35af126](https://github.com/cffnpwr/eslint-config/commit/35af126c82be2935f9b3d9c6e8052e66a17345b0))
+* **deps:** :package: update dependency typescript-eslint to v8.72.1 ([#359](https://github.com/cffnpwr/eslint-config/issues/359)) ([fa985a2](https://github.com/cffnpwr/eslint-config/commit/fa985a2fbaf64cd73018d5b94651e300436fe72b))
+* **deps:** :package: update dependency typescript-eslint to v8.72.2 ([#390](https://github.com/cffnpwr/eslint-config/issues/390)) ([275f102](https://github.com/cffnpwr/eslint-config/commit/275f102fabd95cf0f09cb1f8159455f908b81bc2))
+* **deps:** :package: update dependency typescript-eslint to v8.73.0 ([#404](https://github.com/cffnpwr/eslint-config/issues/404)) ([998acbb](https://github.com/cffnpwr/eslint-config/commit/998acbbef30040e4819ba399caa45b03df1dc369))
+
 ## [2.1.0](https://github.com/cffnpwr/eslint-config/compare/v2.0.1...v2.1.0) (2026-10-24)
 
 
